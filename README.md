@@ -1,1 +1,35 @@
 # Homepare-Final-Project
+
+Homepare is a web application that is aimed at users that want to buy a property in Mexico. Real Estate web pages from Mexico were scraped using python to assemble the dataset. The app allows the users to check the data in three different ways:
+
+1. The first one is a dashboard made with d3.js and leaflet.js that let the users compare statistics of two states and/or municipalities such as:
+  * Number of properties for sale, average price, average surface, average price per square meter, and external attributes from the house like human, education, income and health indexes.
+2. The second page is an interactive choropleth map made with leaflet that let the users activate or deactivate different layers depending on user selection to check important information of each state and/or municipality like:
+  * The price of each record, price per square meter, GDP, Human Development Index, number of properties for sale, price range
+3. The third, way of presenting the data for the users is the database, that is, each of the record scraped. Here, the user have the chance to specified a minimum and maximum price, and the information contained in table are: ID, suburb, street, description, price, and the url that takes the user to the original announcement.
+
+## Features
+
+* Construction of own database using web scraping
+* Data wrangling and cleaning with pandas
+* Use of AWS RDS with Postgres
+* Visualizations made with javascript libraries(d3, plotly, leaflet)
+
+
+## Built with
+
+* HTML/CSS
+* Bootstrap
+* Flask
+* Postgres
+* Javascript
+* AWS RDS
+* Leaflet.js
+* Plotly.js
+* d3.js
+* Python(pandas, BeautifulSoup, Selenium, Splinter)
+
+## Outcomes
+
+
+
