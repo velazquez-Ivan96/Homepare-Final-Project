@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block content %}
+
+   <body id="services" class="inner_page" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+      <!-- LOADER -->
+      <div id="preloader">
+         <div class="loader">
+            <img src="static/images/loader.gif" alt="#" />
+         </div>
+      </div>
+      <!-- END LOADER -->
+      <div class="wrapper">
+
+{% include "navmenu.html" %}
+
+      <div id="content">
+         <!-- Start header -->
+         <header class="top-header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <div class="logo_main">
+                        <a href="/"><img src="static/images/home2.png" /></a>
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn"><img src="static/images/menu_icon.png"></button>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- End header -->
+         <!-- section -->
+         <!-- section -->
+         <div class="section about_section layout_padding padding_top_0">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="heading_main text_align_center">
+                           <h2 class="margin-bottom_30"><strong class="small theme_color">Access to our database?</strong><br>Sure, explore it and find specificaly what you are looking for!</h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="container data">
+                  <div class="row">
+                      <div class="col-sm-12">
+
+                              <div class="card-body boxComp1">
+                                  <form>
+                                      
+                                    <div class="form-row">
+                                       <div class="form-group col-md-6">
+                                          <label for="cbostate">Select state</label>
+                                          <select class="form-control form-control-sm" id="cbostate"></select>
+                                       </div>
+                                       <div class="form-group col-md-6">
+                                          <label for="cbomunicipality">Select Municipality</label>
+                                          <select class="form-control form-control-sm" id="cbomunicipality"></select>
+                                       </div>
+                                    </div>
+
+                                       <div class="form-row">
+                                          <div class="form-group col-md-6">
+                                             <label for="min_price">Min Price</label>
+                                             <input class="form-control form-control-sm" type="number" id="min_price" name="min_price" min="0" max="99999999" value=0 >
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                             <label for="max_price">Max Price</label>
+                                             <input class="form-control form-control-sm" type="number" id="max_price" name="max_price" min="1" max="99999999" value=99999999>
+                                          </div>
+                                       </div>
+                                       
+                                      <div class="col text-center">
+                                       <button type="button" id="button" class="btn btn-primary"> Filter table</button>
+                                       </div>
+                                  </form>
+                              </div>
+
+                     </div>  
+                      <div class="col-sm-12">
+                          <table class="table table-striped table-hover table-responsive">
+                              <thead>
+                                  <tr>
+                                      <th scope="col">ID</th>
+                                      <th scope="col">Colonia</th>
+                                      <th scope="col">Calle</th>
+                                      <th scope="col">Descripcion</th>
+                                      <th scope="col">Precio</th>
+                                      <th scope="col">Url</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="tableContent">
+
+                              </tbody>
+                          </table>
+                          <div class="col-sm-12 text-center">
+                           <button type="button" id="button_previous" class="btn btn-primary"> Previous</button>
+                           <button type="button" id="button_next" class="btn btn-primary"> Next</button>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              
+                </div>
+               </div>
+            </div>
+         </div>
+
+         <script src="static/js/table.js"></script>
+
+
+   {% endblock %}

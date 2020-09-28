@@ -1,0 +1,39 @@
+/** ADD YOUR AWESOME CODES HERE **/
+
+#map {
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 5em;
+  position: relative;
+}
+
+.sectionComp1 {
+  display: none;
+}
+
+.sectionComp2 {
+  display: none;
+}
+
+.info-card{
+  display: none;
+}
+
+.info-card-2{
+  display: none;
+}
+
+.boxComp1{
+  background-color: #e9edde;
+  padding: 1.5%;
+  border-radius: 20px
+}
+
+.headingsTitles {
+  color: blue;
+}
+
+.headingsTitles2 {
+  color: orangered;
+}
+
