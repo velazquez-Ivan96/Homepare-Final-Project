@@ -12,7 +12,7 @@ Homepare is a web application that is aimed at users that want to buy a property
 ## Features
 
 * Construction of own database using web scraping
-* Data wrangling and cleaning with pandas
+* Data wrangling with pandas
 * Use of AWS RDS with Postgres
 * Visualizations made with javascript libraries(d3, plotly, leaflet)
 
